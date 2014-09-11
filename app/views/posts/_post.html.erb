@@ -7,3 +7,9 @@
   <strong>Content:</strong>
   <%= post.body %>
 </p>
+
+<p>
+    <%= link_to 'Destroy Post', [post.user, post],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
